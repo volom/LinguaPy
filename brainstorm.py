@@ -37,7 +37,15 @@ while True:
         words = learning.action('select words to learn')[0]
         
         # get info about words from dictionary
+        print("translation")
+        translated_info = get_specific_words('w_translated', ('word_eng', 'word_rus', 'word_rus_ext'), tuple(words))
+        for word in translated_info:
+            print(word[0], word[1])
+        for word in translated_info:
+            print(word[0], word[2])
+        print('-----------------------------------------------------')
         dict_info = get_specific_words('w_dictionary',('word_eng', 'definition', 'syns', 'antons', 'example'), tuple(words))
+
         print('definitions\n')
 
         for word in dict_info:
