@@ -8,7 +8,7 @@ from db_repo.db_handle import get_specific_word
 
 def t_word_engwrite(word):
     while True:
-        word_init = word
+        word_init = re.sub(r'\s+', ' ', word).strip()
 
         print("Write the word in English")
         # get info from dictionary
@@ -18,7 +18,7 @@ def t_word_engwrite(word):
         
         user_input = input('---> ')
 
-        if user_input.lower() == word.lower():
+        if user_input.lower() == re.sub(r'\s+', ' ', word).strip().lower():
             print("Congrats! You write the word right!")
             break
         else:
