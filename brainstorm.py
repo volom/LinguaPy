@@ -92,11 +92,12 @@ while True:
             continue
     
     if cont == 'y':
+        clearConsole()
         continue
     else:
         break
 
-number_sents = 5
+number_sents = 3
 
 ask_user = input("Would you like to train your words with sentences?  [y/n] ")
 while True:
