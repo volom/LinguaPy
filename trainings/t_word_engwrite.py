@@ -3,6 +3,7 @@ Exercise for writing English word which is sounded
 """
 import pyttsx3
 import sys
+import re
 sys.path.append("../LinguaPy")
 from db_repo.db_handle import get_specific_word
 
