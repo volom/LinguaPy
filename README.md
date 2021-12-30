@@ -8,6 +8,8 @@ add_word_cb.py - adding new words by copping into clickboard. One copy = sound t
 
 add_word_input.py - adding new words by entering values to terminal windows. It works both with English and Russian words.
 
+brainstrom.py - the script consists training programs for practice vocabulary
+
 -------------------------------------------
 
 database - db_repo - linguapy.db
