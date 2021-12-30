@@ -3,6 +3,7 @@ The script consists algorithm for calculating sentences similarity
 """
 
 import nltk
+#nltk.download('omw-1.4')
 import re
 
 # synonyms library
