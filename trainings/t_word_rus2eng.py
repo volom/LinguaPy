@@ -45,3 +45,4 @@ def t_word_rus2eng(word):
         else:
             print("Wrong translation :( please, try again...")
             continue
+        

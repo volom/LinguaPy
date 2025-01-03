@@ -1,5 +1,5 @@
 #https://deep-translator.readthedocs.io/en/latest/usage.html
-
+#!/usr/bin/env python
 """
 Script for adding English word to the dictionary 
 by entering a value to the terminal
@@ -28,15 +28,17 @@ while True:
         if not has_cyrillic(word):
             copied_word_ru, ext_trans = translate_tool(word)[1], translate_tool(word)[2]
             print(f'{word}: ', copied_word_ru, ext_trans)
-
-            while True:
-                check = input(f"""Add to the dictionary "{word}"? [y/n] """)
-                if check.lower() != 'y' and check.lower() != 'n':
-                    print("""please, choose "y" or "n" """)
-                    continue
-                else:
-                    break
-
+            check = ''
+            def loop():
+                global check
+                while True:
+                    check = input(f"""Add to the dictionary "{word}"? [y/n] """)
+                    if check.lower() != 'y' and check.lower() != 'n':
+                        print("""please, choose "y" or "n" """)
+                        continue
+                    else:
+                        break
+            loop()            
             if check.lower() == 'y':
                 word = re.sub(r'\s+', ' ', word).strip()
 

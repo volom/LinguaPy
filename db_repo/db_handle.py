@@ -2,7 +2,7 @@
 The script contains tools for handling LinguaPy project database
 ..//db_repo//linguapy.db
 """
-
+#!/opt/homebrew/anaconda3/bin/python
 import sqlite3
 import os
 

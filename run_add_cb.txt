@@ -1,0 +1,2 @@
+!/usr/bin/env bash
+python /Users/vomelenchuk/Desktop/Курсы/English/LinguaPy/add_word_cb.py

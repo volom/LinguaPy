@@ -1,5 +1,5 @@
 #https://deep-translator.readthedocs.io/en/latest/usage.html
-
+#!/opt/homebrew/anaconda3/bin/python
 """
 Script for adding English word to the dictionary 
 by copping value to clipboard
@@ -29,7 +29,7 @@ flag2 = True
 
 def add_dict_info(word):
     add2db('w_dictionary', ('word_eng', 'definition', 'syns', 'antons', 'example'), (get_dict_info(word)))
-    time.sleep(5)
+
 
 print("Go ahead! Improve your English!")
 while True:
