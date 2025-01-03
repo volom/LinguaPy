@@ -130,7 +130,7 @@ if ask_user == 'y':
                 for sent in sents:
                     while True:
                         rus_translated = translate_tool(sent)
-                        print(f"Word yo have to use - {word}")
+                        print(f"Word you have to use - {word}")
                         print("Write translation into English:")
                         pyttsx3.speak(rus_translated[1])
                         print(rus_translated[1])
